@@ -82,7 +82,9 @@ analytics:
 author:
   name             : "Yexin Mao"
   avatar           : "bio_photo.jpg"
-  bio              : "Master @ ANU\n Undergraduate @ USYD"
+  bio              : |
+                     "Master @ ANU 
+                     Undergraduate @ USYD"
   location         : "Canberra"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
