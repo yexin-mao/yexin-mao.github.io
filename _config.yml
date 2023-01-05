@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wei Huang"
+title                    : "Yexin Mao"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://weihuang05.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://yexin-mao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "weihuang05/weihuang05.github.io"
+repository               : "yexin-mao/yexin-mao.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Wei Huang"
-  avatar           : "profile.JPG"
-  bio              : "I obtained my Ph.D. degree at University of Technology Sydney working on deep learning theory and its application"
-  location         : "Sydney"
+  name             : "Yexin Mao"
+  avatar           : "bio_photo.jpg"
+  bio              : "Master @ ANU\n Undergraduate @ USYD"
+  location         : "Canberra"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com.au/citations?user=RZfDh4MAAAAJ&hl=en"
-  email            : "weihuang.uts@gmail.com"
+  googlescholar    : "https://scholar.google.com.au/citations?user=vBxefZEAAAAJ&hl=en&oi=ao"
+  email            : "u7530987@anu.edu.au"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "weihuang05"
+  github           : "yexin-mao"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/yexin-mao-49bba9234/"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
