@@ -2,7 +2,7 @@
 title: Welcome to Yexin Mao's Homepage
 ---
 
-I am a master student at Australian National University working with [Dr. Huan Lei](https://huanlei.xyz/). I also work closely as an intern at Institute of Automation, Chinese Academy of Science with [Dr. Zhiwei Liu](https://www.researchgate.net/scientific-contributions/Zhiwei-Liu-2155242571).
+I am a master student at Australian National University, working with [Dr. Huan Lei](https://huanlei.xyz/). I also work closely as an intern at Institute of Automation, Chinese Academy of Science with [Dr. Zhiwei Liu](https://www.researchgate.net/scientific-contributions/Zhiwei-Liu-2155242571).
 
 I received my Bachelor's degree from The University of Sydney, where I was fortunate to work under the supervision of [Dr. Wei Huang](https://weihuang05.github.io/) and [Prof. Tongliang Liu](https://tongliang-liu.github.io/). I was awarded Honors Class I.
 
