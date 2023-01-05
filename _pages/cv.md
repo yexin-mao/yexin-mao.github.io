@@ -11,11 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in Physics, University of Science and Technology of China (USTC), Aug. 2010 - Jun. 2014
-* M.S. in Physics, University of Science and Technology of China (USTC), Aug. 2014 - Jun. 2017
-* Ph.D. in Computer Science, University of Technology Sydney (UTS),  Aug. 2017 - Nov. 2021
+* B.S. in Computer Science, The University of Sydney (USYD), 2018-2022
+* M.S. in Machine Learning and Computer Vision, Australian National University (ANU), 2022-2024
 
-Work experience
+<!-- Work experience
 ======
 * June. 2022-Present: Postdoctoral Researcher
   * RIEKN AIP
@@ -53,4 +52,4 @@ Teaching
 Service and leadership
 ======
 * Conference reviewer:  NeurIPS 2021-2022, ICLR 2022-2023, ICML 2021-2022, KDD 2022, CVPR 2022, IJCAI 2022, SIGIR 2022, AISTATS 2022-2023, AAAI 2022 (Meta Reviewer).
-* Journal reviewer: IEEE Transactions on Cybernetics, IEEE TKDE.
+* Journal reviewer: IEEE Transactions on Cybernetics, IEEE TKDE. -->
