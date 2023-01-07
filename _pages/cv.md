@@ -14,6 +14,18 @@ Education
 * B.S. in Computer Science, The University of Sydney (USYD), 2018-2022
 * M.S. in Machine Learning and Computer Vision, Australian National University (ANU), 2022-2024
 
+
+Work experience
+======
+* HD Education
+* June. 2022-Present: Postdoctoral Researcher
+  * RIEKN AIP
+  * Supervisor: Taiji Suzuki
+
+* Nov. 2022-Present: Visiting Researcher
+  * Mohamed bin Zayed University of Artificial Intelligence
+  * Supervisor: Zhiqiang Xu
+
 <!-- Work experience
 ======
 * June. 2022-Present: Postdoctoral Researcher
