@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[my link](Yexin_Mao.pdf)
+<a href="https://github.com/yexin-mao/yexin-mao.github.io/edit/main/_pages/Yexin_Mao.pdf" target="_blank">PDF.</a>
 <!-- {% include base_path %}
 
 Education
