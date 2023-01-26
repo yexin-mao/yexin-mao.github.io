@@ -7,7 +7,8 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+[my link](Yexin_Mao.pdf)
+<!-- {% include base_path %}
 
 Education
 ======
@@ -17,14 +18,15 @@ Education
 
 Work experience
 ======
-* HD Education
+* Tutor, HaiDao Education 
+* 
 * June. 2022-Present: Postdoctoral Researcher
   * RIEKN AIP
   * Supervisor: Taiji Suzuki
 
 * Nov. 2022-Present: Visiting Researcher
   * Mohamed bin Zayed University of Artificial Intelligence
-  * Supervisor: Zhiqiang Xu
+  * Supervisor: Zhiqiang Xu -->
 
 <!-- Work experience
 ======
