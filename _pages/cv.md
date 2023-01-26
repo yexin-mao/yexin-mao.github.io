@@ -13,7 +13,7 @@ author_profile: true
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yexin-mao/yexin-mao.github.io/blob/main/_pages/Yexin_Mao.pdf">Download PDF</a>.</p>
     </embed>
 </object> -->
-<iframe width="100%" height="800" src="https://github.com/yexin-mao/yexin-mao.github.io/_pages/Yexin_Mao.pdf">
+<iframe width="100%" height="800" src="https://github.com/yexin-mao/yexin-mao.github.io/blob/main/_pages/Yexin_Mao.pdf">
 
 
 <!-- {% include base_path %}
