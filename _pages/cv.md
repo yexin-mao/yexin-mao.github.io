@@ -3,11 +3,14 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
+
+<!-- redirect_from:
+  - /resume -->
 ---
 
-<a href="https://github.com/yexin-mao/yexin-mao.github.io/edit/main/_pages/Yexin_Mao.pdf" target="_blank">PDF.</a>
+<a href="Yexin_Mao.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
+
+
 <!-- {% include base_path %}
 
 Education
