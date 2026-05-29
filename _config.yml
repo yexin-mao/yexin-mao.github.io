@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Yexin Mao"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Yexin Mao"
+description              : &description "AI Agent Engineer / Applied AI Engineer portfolio"
 url                      : https://yexin-mao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yexin-mao/yexin-mao.github.io"
@@ -83,12 +83,12 @@ author:
   name             : "Yexin Mao"
   avatar           : "bio_photo.jpg"
   bio              : |
-                     "Master @ ANU, Undergraduate @ USYD"
+                     "AI Agent Engineer / Applied AI Engineer"
   location         : "Canberra"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.au/citations?user=vBxefZEAAAAJ&hl=en&oi=ao"
-  email            : "u7530987@anu.edu.au"
+  email            : "yexin.mao@anu.edu.au"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
