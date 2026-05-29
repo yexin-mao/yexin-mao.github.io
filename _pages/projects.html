@@ -1,7 +1,152 @@
 ---
 layout: archive
 permalink: /projects/
+title: "AI Agent Projects"
 author_profile: true
 ---
 
-To be continued
+<style>
+.project-hero {
+  padding: 1rem 0 1.2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.project-hero h1 { margin-bottom: .4rem; }
+.project-lead { color: #374151; max-width: 850px; }
+.project-card {
+  margin: 1.4rem 0;
+  padding: 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .06);
+}
+.project-card h2 { margin-top: 0; }
+.project-meta {
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: .7rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: .9rem;
+}
+.project-mini {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: .9rem;
+}
+.project-mini h4 { margin-top: 0; }
+.badge {
+  display: inline-block;
+  margin: .15rem .2rem .15rem 0;
+  padding: .22rem .52rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: .78rem;
+  font-weight: 700;
+}
+.todo-box {
+  border-left: 4px solid #f59e0b;
+  background: #fffbeb;
+  padding: .85rem 1rem;
+  border-radius: 10px;
+}
+</style>
+
+<div class="project-hero">
+  <h1>AI Agent Portfolio</h1>
+  <p class="project-lead">
+    My portfolio is being built around two complementary systems: one knowledge/evidence agent and one action/workflow agent. The goal is to show real AI Agent engineering depth: retrieval, citations, evaluation, tool use, state, memory, safety, and demo-ready documentation.
+  </p>
+</div>
+
+<section id="traceable-agentic-rag" class="project-card">
+  <h2>Traceable Agentic RAG System</h2>
+  <div class="project-meta">Evidence-grounded research and QA agent · Current portfolio project</div>
+  <p>
+    This project is not a generic ChatPDF app. It is designed as a traceable RAG workflow that can break down complex questions, retrieve evidence from multiple angles, select and cite sources, and evaluate whether the generated answer is actually supported.
+  </p>
+
+  <div class="project-grid">
+    <div class="project-mini">
+      <h4>Core workflow</h4>
+      <ul>
+        <li>Question decomposition</li>
+        <li>Multi-query retrieval</li>
+        <li>Evidence ranking</li>
+        <li>Citation-grounded synthesis</li>
+        <li>Unsupported-claim checks</li>
+      </ul>
+    </div>
+    <div class="project-mini">
+      <h4>Engineering focus</h4>
+      <ul>
+        <li>Explicit workflow state</li>
+        <li>Traceable retrieval steps</li>
+        <li>Evaluation metrics</li>
+        <li>FastAPI demo backend</li>
+        <li>Web evidence dashboard</li>
+      </ul>
+    </div>
+    <div class="project-mini">
+      <h4>Target stack</h4>
+      <p>
+        <span class="badge">Python</span>
+        <span class="badge">LangGraph</span>
+        <span class="badge">LangChain</span>
+        <span class="badge">LlamaIndex</span>
+        <span class="badge">FastAPI</span>
+        <span class="badge">Vector DB</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="deep-agent-workbench" class="project-card">
+  <h2>Deep Agent Workbench</h2>
+  <div class="project-meta">LangChain Deep Agents-style autonomous workflow agent · Current portfolio project</div>
+  <p>
+    This project focuses on action-oriented agents: systems that do not just answer once, but plan, use tools, inspect results, remember intermediate context, ask for approval when needed, and continue until the task is complete or safely stopped.
+  </p>
+
+  <div class="project-grid">
+    <div class="project-mini">
+      <h4>Core workflow</h4>
+      <ul>
+        <li>High-level task planning</li>
+        <li>Tool selection and execution</li>
+        <li>Working memory / state</li>
+        <li>Result inspection</li>
+        <li>Retry and recovery paths</li>
+      </ul>
+    </div>
+    <div class="project-mini">
+      <h4>Safety and reliability</h4>
+      <ul>
+        <li>Human approval for risky actions</li>
+        <li>Sandboxed execution target</li>
+        <li>Structured tool schemas</li>
+        <li>Execution traces</li>
+        <li>Task-success regression tests</li>
+      </ul>
+    </div>
+    <div class="project-mini">
+      <h4>Target stack</h4>
+      <p>
+        <span class="badge">Python</span>
+        <span class="badge">LangGraph</span>
+        <span class="badge">LangChain</span>
+        <span class="badge">Tool Calling</span>
+        <span class="badge">FastAPI</span>
+        <span class="badge">Frontend Demo</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="todo-box">
+  <strong>Next updates:</strong> add GitHub repo links, architecture diagrams, screenshots, demo video, online demo links, and evaluation tables as the projects become real and testable.
+</div>

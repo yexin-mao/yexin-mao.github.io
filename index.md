@@ -1,54 +1,145 @@
 ---
-title: Welcome to Yexin Mao's Homepage
+title: "Yexin Mao | AI Agent Engineer"
+permalink: /
+author_profile: true
 ---
 
-I am a master student at Australian National University, working with [Dr. Huan Lei](https://huanlei.xyz/). I also work closely as an intern at Institute of Automation, Chinese Academy of Science with [Dr. Zhiwei Liu](https://www.researchgate.net/scientific-contributions/Zhiwei-Liu-2155242571).
+<style>
+.agent-hero {
+  padding: 2.2rem 0 1.4rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.agent-eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+.agent-hero h1 {
+  margin: .35rem 0 .65rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+.agent-lead {
+  max-width: 820px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+.agent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+.agent-btn {
+  display: inline-block;
+  padding: .68rem .95rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none !important;
+  border: 1px solid #d1d5db;
+}
+.agent-btn.primary {
+  background: #111827;
+  color: white !important;
+  border-color: #111827;
+}
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2rem;
+}
+.agent-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 1.15rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .06);
+}
+.agent-card h3 { margin-top: 0; }
+.agent-tag {
+  display: inline-block;
+  margin: .15rem .2rem .15rem 0;
+  padding: .24rem .5rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: .78rem;
+  font-weight: 700;
+}
+.agent-muted { color: #6b7280; }
+.agent-section { margin-top: 2rem; }
+.agent-list li { margin-bottom: .45rem; }
+.agent-status {
+  padding: .85rem 1rem;
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  border-radius: 10px;
+}
+</style>
 
-I received my Bachelor's degree from The University of Sydney, where I was fortunate to work under the supervision of [Dr. Wei Huang](https://weihuang05.github.io/) and [Prof. Tongliang Liu](https://tongliang-liu.github.io/). I was awarded Honors Class I.
+<div class="agent-hero">
+  <div class="agent-eyebrow">AI Agent Engineer / Applied AI Engineer</div>
+  <h1>Building reliable AI agents that retrieve evidence, use tools, and complete multi-step work.</h1>
+  <p class="agent-lead">
+    I am Yexin Mao, a Computer Vision and Machine Learning graduate from the University of Sydney and the Australian National University, now focused on AI Agent systems. My current portfolio centers on two engineering-heavy projects: a traceable Agentic RAG system and a Deep Agents-style autonomous workflow agent.
+  </p>
+  <div class="agent-actions">
+    <a class="agent-btn primary" href="/projects/">View Projects</a>
+    <a class="agent-btn" href="https://github.com/yexin-mao">GitHub</a>
+    <a class="agent-btn" href="mailto:yexin.mao@anu.edu.au">Contact</a>
+  </div>
+</div>
 
-I have particular research interests on Machine Learning & Computer Vision, especially neural radiance field.
+## Featured AI Agent Projects
 
-<!-- Please feel free to contact me if you want to cooperate or discuss with me (weihuang[dot]uts[at]gmail[dot]com) on deep learning theory and its application. 
- -->
- 
-<!-- ### Research Interest
+<div class="agent-grid">
+  <div class="agent-card">
+    <h3>Traceable Agentic RAG System</h3>
+    <p class="agent-muted">Evidence-grounded research and QA agent.</p>
+    <p>
+      A RAG agent designed to decompose complex questions, retrieve multiple evidence candidates, rank sources, generate citation-grounded answers, and evaluate whether claims are supported.
+    </p>
+    <p>
+      <span class="agent-tag">Agentic RAG</span>
+      <span class="agent-tag">LangGraph</span>
+      <span class="agent-tag">Evaluation</span>
+      <span class="agent-tag">Citations</span>
+    </p>
+    <p><a href="/projects/#traceable-agentic-rag">Project details →</a></p>
+  </div>
 
-* Theoretically understanding deep learning from expressivity, trainability, and generalization.
-  
-  Feature Learning; Neural Tangent Kernel; Implicit Regularization/Bias
+  <div class="agent-card">
+    <h3>Deep Agent Workbench</h3>
+    <p class="agent-muted">LangChain Deep Agents-style autonomous workflow agent.</p>
+    <p>
+      A multi-step agent workbench for planning, tool execution, working memory, intermediate-result inspection, human approval, retries, and task-success evaluation.
+    </p>
+    <p>
+      <span class="agent-tag">Deep Agents</span>
+      <span class="agent-tag">Tool Calling</span>
+      <span class="agent-tag">Memory</span>
+      <span class="agent-tag">Human-in-the-loop</span>
+    </p>
+    <p><a href="/projects/#deep-agent-workbench">Project details →</a></p>
+  </div>
+</div>
 
-* Applications powered by deep learning: 
+<div class="agent-status">
+  <strong>Current status:</strong> This site is the first public portfolio shell. The project pages will be updated as the code, demos, evaluation results, screenshots, and videos become available.
+</div>
 
-  Graph Neural Networks; Computer Vision (Neural Architecture Search)
+<div class="agent-section">
 
-### News
+## What I want to demonstrate
 
-* 11/2022 I arrived in Tokyo, Japan! 
+<ul class="agent-list">
+  <li><strong>AI-native product thinking:</strong> agents as workflows, not one-shot chatbot responses.</li>
+  <li><strong>Reliable RAG:</strong> evidence selection, citation grounding, unsupported-claim checks, and evaluation.</li>
+  <li><strong>Deep agent engineering:</strong> planning, state, memory, tool schemas, retries, and safety boundaries.</li>
+  <li><strong>Production readiness:</strong> GitHub repos, readable documentation, web demos, and measurable task outcomes.</li>
+</ul>
 
-* 09/2022 Four papers are accepted by NeurIPS 2022 (CORE A*, CCF A), [Deep Architecture Connectivity Matters for Its Convergence: A Fine-Grained Analysis](https://arxiv.org/abs/2205.05662); [Deep Active Learning by Leveraging Training Dynamics](https://arxiv.org/abs/2110.08611); [Interpreting Operation Selection in Differentiable Architecture Search: A Perspective from Influence-Directed Explanations](https://openreview.net/forum?id=MPARWTuMiPh) 
-
-* 08/2022 One paper is accepted by Knowledge-Based Systems journal (IF: 8.664)
-
-* 05/2022 I am invited to serve as a reviewer for ICLR-2023 (CORE A*) 
-
-* 03/2022 I am invited to serve as a reviewer for NeurIPS-2022 (CORE A*, CCF A) 
-
-* 01/2022 Two papers are accepted by ICLR 2022 (CORE A*), [Towards Deepening Graph Neural Networks: A GNTK-based Optimization Perspective](https://arxiv.org/abs/2103.03113); [Auto-scaling Vision Transformers without Training](https://openreview.net/pdf?id=H94a1_Pyr-6)
-
-* 12/2021 I am invited to serve as a reviewer for ICML-2022 (CORE A*)
-
-* 11/2021 I am invited to serve as a reviewer for CVPR-2022 (CORE A*)
-
-* 09/2021 One paper is accepted by NeurIPS 2021 (CORE A*), [On the Equivalence between Neural Network and Support Vector Machine](https://arxiv.org/abs/2111.06063)
-
-* 07/2021 I am invited to serve as a Senior Program Committee member for AAAI-2022 (CORE A*) 
-
-* 06/2021 I am invited to serve as a reviewer for ICLR-2022 (CORE A*) 
-
-* 04/2021 One paper is accepted by IJCAI 2021 (CORE A*, CCF A), [On the Neural Tangent Kernel of Deep Networks with Orthogonal Initialization](https://arxiv.org/abs/2004.05867)
-
-* 03/2021 I am invited to serve as a reviewer for NeurIPS-2021 (CORE A*, CCF A) 
-
-* 12/2020 I am invited to serve as a reviewer for ICML-2021 (CORE A*, CCF A) 
-
- -->
+</div>
