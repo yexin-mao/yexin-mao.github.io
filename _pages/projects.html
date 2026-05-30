@@ -54,6 +54,13 @@ author_profile: true
   padding: .85rem 1rem;
   border-radius: 10px;
 }
+.progress-box {
+  border-left: 4px solid #10b981;
+  background: #ecfdf5;
+  padding: .85rem 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
 </style>
 
 <div class="project-hero">
@@ -69,6 +76,13 @@ author_profile: true
   <p>
     This project is not a generic ChatPDF app. It is designed as a traceable RAG workflow that can break down complex questions, retrieve evidence from multiple angles, select and cite sources, and evaluate whether the generated answer is actually supported.
   </p>
+
+  <div class="progress-box">
+    <strong>Latest build update · 2026-05-30:</strong>
+    added deterministic claim-level support checks. The local pipeline now records whether each answer claim is supported or unsupported by retrieved evidence, with tests covering the regression case.
+    <br>
+    <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
+  </div>
 
   <div class="project-grid">
     <div class="project-mini">
