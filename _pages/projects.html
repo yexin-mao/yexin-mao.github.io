@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-05-30:</strong>
-    added deterministic claim-level support checks. The local pipeline now records whether each answer claim is supported or unsupported by retrieved evidence, with tests covering the regression case.
+    added deterministic evidence sufficiency summaries to each trace. The local pipeline now reports whether the retrieved evidence is enough to trust the answer, including evidence count, supported/unsupported claim counts, and a plain-English reason. This builds on the existing claim-level support checks.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
