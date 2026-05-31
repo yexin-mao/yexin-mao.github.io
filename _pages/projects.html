@@ -78,8 +78,8 @@ author_profile: true
   </p>
 
   <div class="progress-box">
-    <strong>Latest build update · 2026-05-30:</strong>
-    added deterministic evidence sufficiency summaries to each trace. The local pipeline now reports whether the retrieved evidence is enough to trust the answer, including evidence count, supported/unsupported claim counts, and a plain-English reason. This builds on the existing claim-level support checks.
+    <strong>Latest build update · 2026-05-31:</strong>
+    added deterministic query planning for complex questions. The local pipeline can now split a broad question into focused retrieval sub-queries, run retrieval for each sub-query, and deduplicate repeated evidence chunks in the trace. This is an early agentic retrieval step; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
