@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-05-31:</strong>
-    added deterministic query planning for complex questions. The local pipeline can now split a broad question into focused retrieval sub-queries, run retrieval for each sub-query, and deduplicate repeated evidence chunks in the trace. This is an early agentic retrieval step; no public demo is claimed yet.
+    added per-query retrieval step tracing. The local pipeline now records, for each planned retrieval query, which source IDs and chunk IDs were retrieved, making the RAG run easier to debug and ready for a future trace/evidence dashboard. Earlier today it also added deterministic query planning for complex questions and multi-query evidence collection. This is current in-progress engineering work; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
