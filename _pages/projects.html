@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-01:</strong>
-    added a dashboard-ready evidence table helper. The local pipeline can now turn each trace into ranked evidence rows with source ID, chunk ID, retrieval score, and snippet text, which is the next small step toward an interview-friendly trace/evidence dashboard. This is current in-progress engineering work; no public demo is claimed yet.
+    added JSON trace persistence for each RAG run. The local pipeline can now save the question, planned retrieval steps, evidence, answer, claim checks, and evidence-sufficiency status into a readable trace file for later debugging and dashboard work. This builds directly on the evidence-table helper from earlier today. It is current in-progress engineering work; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
