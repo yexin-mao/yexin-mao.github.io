@@ -78,8 +78,8 @@ author_profile: true
   </p>
 
   <div class="progress-box">
-    <strong>Latest build update · 2026-05-31:</strong>
-    added per-query retrieval step tracing. The local pipeline now records, for each planned retrieval query, which source IDs and chunk IDs were retrieved, making the RAG run easier to debug and ready for a future trace/evidence dashboard. Earlier today it also added deterministic query planning for complex questions and multi-query evidence collection. This is current in-progress engineering work; no public demo is claimed yet.
+    <strong>Latest build update · 2026-06-01:</strong>
+    added a dashboard-ready evidence table helper. The local pipeline can now turn each trace into ranked evidence rows with source ID, chunk ID, retrieval score, and snippet text, which is the next small step toward an interview-friendly trace/evidence dashboard. This is current in-progress engineering work; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
