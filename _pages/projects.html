@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-06:</strong>
-    added a one-run trace report formatter for the Traceable RAG pipeline. A multi-query RAG run can now be rendered as Markdown with the original question, evidence sufficiency status, planned-query count, retrieved-evidence count, a retrieval-step table, and a ranked evidence table. I also tightened the deterministic claim checker so citation-only fragments do not create false unsupported-claim failures. Current status: in-progress observability/reporting infrastructure; no public demo is claimed yet.
+    added compact per-run status summaries for the Traceable RAG pipeline. A multi-query RAG run can now produce dashboard-card metrics such as evidence sufficiency status, planned-query count, retrieval-step count, evidence count, supported/unsupported claim counts, and cited-source count. This complements the Markdown trace report and moves the project closer to a clean observability dashboard. Current status: in-progress reporting infrastructure; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
