@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-07:</strong>
-    added ordered trace timeline events for the Traceable RAG pipeline. A multi-query RAG run can now be represented as a clean sequence of planned-query events, retrieval events with source/chunk IDs, and a final evidence-sufficiency evaluation event. This is a small but concrete step toward visualizing how an answer was produced and where failures happened. Current status: in-progress observability infrastructure; no public demo is claimed yet.
+    added a citation-to-evidence map for the Traceable RAG pipeline. A generated answer's citations can now be linked back to retrieved evidence rank, chunk ID, snippet text, and supporting-claim counts, which makes the future dashboard clearer for debugging citation grounding instead of only showing raw answer text. Current status: in-progress observability infrastructure; no public demo is claimed yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
