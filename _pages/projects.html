@@ -78,8 +78,8 @@ author_profile: true
   </p>
 
   <div class="progress-box">
-    <strong>Latest build update · 2026-06-11:</strong>
-    added Markdown export for the observability dashboard sections, so trace health, evaluation quality, retrieval latency, and retrieval error cards can be copied directly into a future demo/report page. This is still backend/reporting infrastructure, not a live demo, but it makes the project easier to present to interviewers with concrete run evidence.
+    <strong>Latest build update · 2026-06-12:</strong>
+    hardened the observability dashboard Markdown export so metric-card text containing table separators (<code>|</code>) is escaped before rendering. This keeps interview/report snippets valid when prompts, evaluation labels, or failure details contain punctuation. This is backend/reporting infrastructure, not a live demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
