@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-15:</strong>
-    added an unsupported-claim review Markdown export for the Traceable RAG pipeline. The backend can now filter failed faithfulness checks into a concise table showing the exact unsupported claim and whether any supporting sources exist, making hallucination/debug review easier for a future dashboard or interview artifact. This is backend/reporting infrastructure, not a live demo yet.
+    added a weak-evidence retry path for the Traceable RAG pipeline. When an initial retrieval returns no evidence, the backend can append a rewritten retrieval query and record the second retrieval step in the trace; the current deterministic example rewrites hallucination-control questions toward unsupported-claim/evidence checks. This improves Agentic RAG recovery behavior and traceability, but remains backend/reporting infrastructure rather than a live demo.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
