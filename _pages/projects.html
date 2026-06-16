@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-16:</strong>
-    added a retrieval retry report for weak-evidence recovery. The backend can now export a concise Markdown table showing the original failed query, the rewritten retry query, before/after retrieved sources, and whether evidence was recovered. This makes Agentic RAG retry/recovery behavior easier to explain in interviews and future dashboard demos; it is still backend/reporting infrastructure, not a live hosted demo yet.
+    added a retrieval plan Markdown export. The backend can now show each planned sub-query, the reason it was created, and which sources it retrieved, making query decomposition visible for interview/demo pages. This is current backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
