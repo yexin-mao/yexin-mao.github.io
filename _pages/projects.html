@@ -78,8 +78,8 @@ author_profile: true
   </p>
 
   <div class="progress-box">
-    <strong>Latest build update · 2026-06-15:</strong>
-    added a weak-evidence retry path for the Traceable RAG pipeline. When an initial retrieval returns no evidence, the backend can append a rewritten retrieval query and record the second retrieval step in the trace; the current deterministic example rewrites hallucination-control questions toward unsupported-claim/evidence checks. This improves Agentic RAG recovery behavior and traceability, but remains backend/reporting infrastructure rather than a live demo.
+    <strong>Latest build update · 2026-06-16:</strong>
+    added a retrieval retry report for weak-evidence recovery. The backend can now export a concise Markdown table showing the original failed query, the rewritten retry query, before/after retrieved sources, and whether evidence was recovered. This makes Agentic RAG retry/recovery behavior easier to explain in interviews and future dashboard demos; it is still backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
