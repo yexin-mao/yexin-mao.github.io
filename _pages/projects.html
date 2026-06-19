@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-19:</strong>
-    added a source-attribution Markdown export for trace review. The backend can now show each retrieved source, its evidence rank, whether it was cited in the final answer, how many supported claims it backs, and its top retrieval score. This helps interviewers see which context actually grounded the answer versus merely being retrieved. This is current backend/reporting infrastructure, not a live hosted demo yet.
+    added an evidence-decision Markdown log for trace review. The backend can now mark each RAG trace as <code>ready_for_answer</code> when retrieved evidence is sufficient, or <code>retry_or_escalate</code> when evidence is missing/insufficient, while preserving the reason for interview/debug review. This is current backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
