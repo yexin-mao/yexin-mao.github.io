@@ -78,8 +78,8 @@ author_profile: true
   </p>
 
   <div class="progress-box">
-    <strong>Latest build update · 2026-06-19:</strong>
-    added an evidence-decision Markdown log for trace review. The backend can now mark each RAG trace as <code>ready_for_answer</code> when retrieved evidence is sufficient, or <code>retry_or_escalate</code> when evidence is missing/insufficient, while preserving the reason for interview/debug review. This is current backend/reporting infrastructure, not a live hosted demo yet.
+    <strong>Latest build update · 2026-06-20:</strong>
+    added a recovery-action Markdown plan for trace review. The backend can now map insufficient RAG traces to concrete next steps: retry retrieval when no evidence is found, revise/escalate the answer when unsupported claims remain, or run faithfulness evaluation before delivery when a trace has not been evaluated. This is current backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
