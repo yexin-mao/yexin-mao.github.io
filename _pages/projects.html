@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-20:</strong>
-    added a recovery-action Markdown plan for trace review. The backend can now map insufficient RAG traces to concrete next steps: retry retrieval when no evidence is found, revise/escalate the answer when unsupported claims remain, or run faithfulness evaluation before delivery when a trace has not been evaluated. This is current backend/reporting infrastructure, not a live hosted demo yet.
+    added an answer-approval gate for trace review. The backend can now turn evidence sufficiency into an explicit delivery decision: approve citation-grounded answers only when evidence is sufficient, and block insufficient or unevaluated traces for revision/evaluation before delivery. This is current backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
