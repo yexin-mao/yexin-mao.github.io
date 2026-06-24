@@ -79,7 +79,7 @@ author_profile: true
 
   <div class="progress-box">
     <strong>Latest build update · 2026-06-24:</strong>
-    added a human-review priority board for blocked RAG traces. The backend can now rank unsafe/not-yet-evaluated answers by review risk: unsupported claims first, no-evidence retrieval gaps next, and unevaluated traces after that. This makes the human-in-the-loop safety path more operational for interview demos and future dashboard work; it is current backend/reporting infrastructure, not a live hosted demo yet.
+    added a human-review decision log for the Traceable RAG backend. After the evidence gate recommends approve/block, the report can now record the reviewer outcome (for example approved vs retry retrieval), the evidence status, and an audit note. This strengthens the human-in-the-loop safety story for interviews; it is current backend/reporting infrastructure, not a live hosted demo yet.
     <br>
     <a href="https://github.com/yexin-mao/traceable-rag-agent">GitHub repo</a>
   </div>
