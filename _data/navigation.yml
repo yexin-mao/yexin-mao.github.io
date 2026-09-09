@@ -1,16 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: /
-
   - title: "Demos"
     url: /demos/
-
-  - title: "AI Agent Projects"
-    url: /projects/
-
-  - title: "Publications"
-    url: /publications/
 
   - title: "CV"
     url: /cv/
