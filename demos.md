@@ -1,5 +1,5 @@
 ---
-title: "Project Demos | Yexin Mao"
+title: "Project Demos"
 permalink: /demos/
 layout: single
 author_profile: false
@@ -7,6 +7,7 @@ classes: wide
 ---
 
 <style>
+.page__title { display: none; }
 .demo-shell {
   --ink: #171717;
   --muted: #66645f;
