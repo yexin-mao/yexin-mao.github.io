@@ -3,6 +3,9 @@ main:
   - title: "Home"
     url: /
 
+  - title: "Demos"
+    url: /demos/
+
   - title: "AI Agent Projects"
     url: /projects/
 
