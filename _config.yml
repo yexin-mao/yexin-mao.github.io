@@ -147,6 +147,29 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - _pages/about.md
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/projects.html
+  - _pages/publications.md
+  - _pages/sitemap.md
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - _portfolio
+  - _posts
+  - _projects
+  - _publications
+  - _talks
+  - _teaching
 keep_files:
   - .git
   - .svn
@@ -180,7 +203,7 @@ collections:
 #     output: true
 #     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
  # portfolio:
  #   output: false
@@ -189,7 +212,7 @@ collections:
 #     output: true
 #     permalink: /:collection/:path/
   projects:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 

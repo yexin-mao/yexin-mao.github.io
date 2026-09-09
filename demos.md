@@ -139,7 +139,7 @@ classes: wide
       <h1>Project demos</h1>
       <p>两个完整项目演示：先看真实工作流与结果，再进入仓库检查实现、测试和评测证据。</p>
     </div>
-    <a class="demo-back" href="/">← Back to portfolio</a>
+    <a class="demo-back" href="/cv/">View CV →</a>
   </header>
 
   <section class="demo-item" id="code-agent">
