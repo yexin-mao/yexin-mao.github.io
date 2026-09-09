@@ -8,6 +8,15 @@ classes: wide
 
 <style>
 .page__title { display: none; }
+.page {
+  float: none !important;
+  width: 100% !important;
+  padding-right: 0 !important;
+}
+.page__inner-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+}
 .demo-shell {
   --ink: #171717;
   --muted: #66645f;
@@ -59,6 +68,7 @@ classes: wide
 }
 .demo-player {
   overflow: hidden;
+  aspect-ratio: 16 / 9;
   border: 1px solid #d7d3ca;
   border-radius: 16px;
   background: #111;
@@ -67,7 +77,8 @@ classes: wide
 .demo-player video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100% !important;
+  object-fit: cover;
   background: #111;
 }
 .demo-index {
