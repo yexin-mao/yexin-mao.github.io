@@ -7,6 +7,11 @@ classes: wide
 ---
 
 <style>
+body,
+.masthead,
+.page__footer {
+  background: #f7f7f3;
+}
 .page__title { display: none; }
 .page {
   float: none !important;
@@ -17,234 +22,269 @@ classes: wide
   max-width: 1160px;
   margin: 0 auto;
 }
-.page__content { margin-top: .8rem; }
+.page__content { margin-top: .5rem; }
 .demo-shell {
-  --ink: #101828;
-  --muted: #5f6876;
-  --line: #dce2ec;
-  --accent: #2859d9;
-  --accent-soft: #edf2ff;
-  --surface: #ffffff;
+  --paper: #f7f7f3;
+  --ink: #101113;
+  --muted: #73757a;
+  --rule: #d9dadd;
+  --blue: #315cf5;
   max-width: 1160px;
   margin: 0 auto;
   color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
 }
 .demo-intro {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
+  padding: 1.1rem 0 3.5rem;
+}
+.demo-topline,
+.demo-item-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 1.5rem;
-  overflow: hidden;
-  padding: clamp(1.5rem, 4vw, 2.7rem);
-  border: 1px solid #d8e0ee;
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at 88% 12%, rgba(40, 89, 217, .13), transparent 33%),
-    linear-gradient(135deg, #ffffff 0%, #f5f7fc 100%);
-  box-shadow: 0 16px 46px rgba(31, 45, 76, .08);
-}
-.demo-intro::before {
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 4px;
-  background: var(--accent);
-  content: "";
-}
-.demo-kicker {
-  margin-bottom: .65rem;
-  color: var(--accent);
+  padding-bottom: .85rem;
+  border-bottom: 1px solid var(--rule);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .11em;
+  font-size: .8rem;
+  letter-spacing: .055em;
   text-transform: uppercase;
 }
-.demo-intro h1 {
-  margin: 0;
+.demo-label {
+  display: block;
   color: var(--ink);
-  font-size: clamp(2.35rem, 5vw, 4.25rem);
-  line-height: 1;
-  letter-spacing: -.045em;
 }
-.demo-intro p {
-  max-width: 680px;
-  margin: 1rem 0 0;
-  color: var(--muted);
-  font-size: 1.02rem;
-  line-height: 1.75;
+.demo-kicker {
+  display: block;
+  margin-top: .22rem;
+  color: var(--blue);
 }
 .demo-back {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.55rem;
-  padding: .58rem .95rem;
-  border: 1px solid #cdd6e5;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .78);
   color: var(--ink) !important;
-  white-space: nowrap;
-  font-size: .88rem;
-  font-weight: 750;
+  font-weight: 650;
   text-decoration: none !important;
-  box-shadow: 0 4px 14px rgba(31, 45, 76, .06);
+  white-space: nowrap;
+}
+.demo-hero {
+  display: grid;
+  grid-template-columns: minmax(190px, .72fr) minmax(0, 2.1fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: end;
+  padding-top: 3rem;
+}
+.demo-count strong {
+  display: block;
+  color: var(--blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(5rem, 11vw, 8.2rem);
+  font-weight: 400;
+  line-height: .82;
+  letter-spacing: -.08em;
+}
+.demo-count span {
+  display: block;
+  margin-top: .95rem;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .77rem;
+  letter-spacing: .09em;
+}
+.demo-hero h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.25rem, 5.4vw, 4.35rem);
+  font-weight: 650;
+  line-height: 1.16;
+  letter-spacing: -.045em;
+}
+.demo-hero p {
+  max-width: 690px;
+  margin: 1.15rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
 }
 .demo-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(280px, .8fr);
-  gap: clamp(1.5rem, 3vw, 2.25rem);
-  align-items: center;
-  margin-top: 1.35rem;
-  padding: clamp(1rem, 2.5vw, 1.55rem);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: var(--surface);
-  box-shadow: 0 12px 34px rgba(31, 45, 76, .065);
+  padding: 1.25rem 0 3.8rem;
   scroll-margin-top: 2rem;
+}
+.demo-item + .demo-item {
+  padding-top: 1.25rem;
+}
+.demo-item-head {
+  margin-bottom: 1.25rem;
+}
+.demo-item-head strong {
+  color: var(--blue);
+  font-weight: 500;
+}
+.demo-item-head span:last-child {
+  color: var(--muted);
 }
 .demo-player {
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  border: 1px solid #cfd7e3;
-  border-radius: 14px;
-  background: #090d16;
-  box-shadow: 0 16px 34px rgba(16, 24, 40, .16);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: #101113;
 }
 .demo-player video {
   display: block;
   width: 100%;
   height: 100% !important;
   object-fit: cover;
-  background: #090d16;
+  background: #101113;
 }
-.demo-index {
-  display: inline-flex;
-  align-items: center;
-  min-height: 1.85rem;
-  padding: .28rem .58rem;
-  border: 1px solid #d9e2f6;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: .75rem;
-  font-weight: 700;
-  letter-spacing: .055em;
+.demo-copy {
+  display: grid;
+  grid-template-columns: minmax(230px, .8fr) minmax(0, 1.35fr) auto;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+  padding-top: 1.55rem;
 }
 .demo-copy h2 {
-  margin: .72rem 0 .38rem;
+  margin: 0;
   color: var(--ink);
-  font-size: clamp(1.45rem, 2.4vw, 1.82rem);
-  line-height: 1.25;
+  font-size: clamp(1.45rem, 2.8vw, 2rem);
+  font-weight: 650;
+  line-height: 1.3;
   letter-spacing: -.025em;
 }
 .demo-subtitle {
-  margin: 0;
+  margin: .58rem 0 0;
   color: var(--muted);
-  font-size: .96rem;
-  line-height: 1.65;
+  font-size: .98rem;
+  line-height: 1.7;
 }
 .demo-copy ul {
-  margin: 1.05rem 0 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.75rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 .demo-copy li {
   position: relative;
-  margin-bottom: .52rem;
-  padding-left: 1.05rem;
-  color: #344054;
-  font-size: .93rem;
+  min-height: 3.1rem;
+  padding: .18rem 0 .75rem 1rem;
+  border-bottom: 1px solid var(--rule);
+  color: #37383b;
+  font-size: .92rem;
   line-height: 1.55;
 }
 .demo-copy li::before {
   position: absolute;
-  top: .66em;
+  top: .78em;
   left: 0;
   width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent);
+  height: 2px;
+  background: var(--blue);
   content: "";
 }
 .demo-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .62rem;
+  display: grid;
+  gap: .75rem;
+  min-width: 7.5rem;
 }
 .demo-button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2.55rem;
-  padding: .58rem .92rem;
-  border: 1px solid #cbd4e1;
-  border-radius: 999px;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .3rem 0 .48rem;
+  border-bottom: 1px solid var(--rule);
   color: var(--ink) !important;
-  font-size: .86rem;
-  font-weight: 750;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .02em;
   text-decoration: none !important;
 }
+.demo-button::after {
+  color: var(--blue);
+  content: "↗";
+}
 .demo-button.primary {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: white !important;
-  box-shadow: 0 7px 18px rgba(40, 89, 217, .2);
+  border-bottom-color: var(--blue);
+  color: var(--blue) !important;
 }
 .demo-note {
-  margin: 1.15rem 0 .4rem;
-  text-align: center;
+  margin: -1rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: .82rem;
+  line-height: 1.6;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .demo-back,
-  .demo-button,
-  .demo-item { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
-  .demo-back:hover,
-  .demo-button:hover { transform: translateY(-1px); }
-  .demo-item:hover {
-    border-color: #cbd6e8;
-    box-shadow: 0 18px 44px rgba(31, 45, 76, .09);
-  }
+.demo-back:hover,
+.demo-button:hover {
+  color: var(--blue) !important;
 }
 .demo-back:focus-visible,
 .demo-button:focus-visible,
 .demo-player video:focus-visible {
-  outline: 3px solid rgba(40, 89, 217, .35);
-  outline-offset: 3px;
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
 }
-@media (max-width: 820px) {
-  .demo-intro,
-  .demo-item { grid-template-columns: 1fr; }
-  .demo-back { justify-self: start; }
-  .demo-item { align-items: start; }
-}
-@media (max-width: 520px) {
-  .page__content { margin-top: .35rem; }
-  .demo-intro { border-radius: 17px; }
-  .demo-item {
-    margin-top: 1rem;
-    padding: .78rem;
-    border-radius: 17px;
+@media (max-width: 900px) {
+  .demo-copy {
+    grid-template-columns: 1fr 1.25fr;
   }
-  .demo-player { border-radius: 11px; }
-  .demo-copy { padding: .2rem .25rem .5rem; }
-  .demo-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .demo-actions {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 9rem));
+  }
+}
+@media (max-width: 680px) {
+  .demo-intro { padding-bottom: 2.5rem; }
+  .demo-hero {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+    padding-top: 2.3rem;
+  }
+  .demo-count strong { font-size: 5.2rem; }
+  .demo-copy { grid-template-columns: 1fr; gap: 1.4rem; }
+  .demo-copy ul { grid-template-columns: 1fr; }
+  .demo-actions {
+    grid-column: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 430px) {
+  .demo-topline,
+  .demo-item-head { font-size: .72rem; }
+  .demo-hero h1 { font-size: 2.2rem; }
+  .demo-actions { grid-template-columns: 1fr; }
 }
 </style>
 
 <div class="demo-shell">
   <header class="demo-intro">
-    <div>
-      <div class="demo-kicker">Selected work · 中文讲解</div>
-      <h1>Project demos</h1>
-      <p>两个完整项目演示：先看真实工作流与结果，再进入仓库检查实现、测试和评测证据。</p>
+    <div class="demo-topline">
+      <div>
+        <span class="demo-label">Project demos</span>
+        <span class="demo-kicker">Selected work · 中文讲解</span>
+      </div>
+      <a class="demo-back" href="/cv/">CV / Resume ↗</a>
     </div>
-    <a class="demo-back" href="/cv/">View CV →</a>
+    <div class="demo-hero">
+      <div class="demo-count">
+        <strong>02</strong>
+        <span>PROJECTS</span>
+      </div>
+      <div>
+        <h1>两个项目，<br>两条完整工作流</h1>
+        <p>从真实操作流程与运行结果开始，再进入仓库检查实现、测试和评测证据。</p>
+      </div>
+    </div>
   </header>
 
   <section class="demo-item" id="code-agent">
+    <header class="demo-item-head">
+      <span><strong>01 / 02</strong>&nbsp;&nbsp; Code Agent</span>
+      <span>11:05</span>
+    </header>
     <div class="demo-player">
       <video controls preload="metadata" playsinline poster="/images/demos/code-agent-v34.jpg">
         <source src="/assets/videos/code-agent-demo-v34-zh.mp4" type="video/mp4">
@@ -252,9 +292,10 @@ classes: wide
       </video>
     </div>
     <div class="demo-copy">
-      <div class="demo-index">01 / CODE AGENT · 11:05</div>
-      <h2>本地编码智能体</h2>
-      <p class="demo-subtitle">从最小 Agent 循环到可恢复、可审查的仓库级交付。</p>
+      <div>
+        <h2>本地编码智能体</h2>
+        <p class="demo-subtitle">从最小 Agent 循环到可恢复、可审查的仓库级交付。</p>
+      </div>
       <ul>
         <li>代码调查、修改、测试与审查闭环</li>
         <li>结构化计划与多智能体并行探索</li>
@@ -269,6 +310,10 @@ classes: wide
   </section>
 
   <section class="demo-item" id="minibrain">
+    <header class="demo-item-head">
+      <span><strong>02 / 02</strong>&nbsp;&nbsp; Minibrain</span>
+      <span>07:10</span>
+    </header>
     <div class="demo-player">
       <video controls preload="metadata" playsinline poster="/images/demos/minibrain-v20.jpg">
         <source src="/assets/videos/minibrain-demo-v20-zh.mp4" type="video/mp4">
@@ -276,9 +321,10 @@ classes: wide
       </video>
     </div>
     <div class="demo-copy">
-      <div class="demo-index">02 / MINIBRAIN · 07:10</div>
-      <h2>企业知识库问答与 LLM Wiki</h2>
-      <p class="demo-subtitle">让不同的数据进入正确的检索链路，并交付可验证答案。</p>
+      <div>
+        <h2>企业知识库问答与 LLM Wiki</h2>
+        <p class="demo-subtitle">让不同的数据进入正确的检索链路，并交付可验证答案。</p>
+      </div>
       <ul>
         <li>文档 Vector RAG 与表格 Table RAG</li>
         <li>混合检索、重排序与 parent-aware 去重</li>
